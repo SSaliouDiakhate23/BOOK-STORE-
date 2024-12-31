@@ -1,18 +1,18 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { products } from "../assets/assets";
+import { books } from "../assets/assets";
 
-export const productContext = createContext();
+export const bookContext = createContext();
 
 function ProductContextProvider(props) {
   const currency = "$";
   const frais = 15;
 
   return (
-    <productContext.Provider value={{ products, currency, frais }}>
+    <bookContext.Provider value={{ books, currency, frais }}>
       {props.children}
-    </productContext.Provider>
+    </bookContext.Provider>
   );
 }
 

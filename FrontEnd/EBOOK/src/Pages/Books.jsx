@@ -1,7 +1,7 @@
 import React from "react";
 
-function Product() {
+function Books() {
   return <div></div>;
 }
 
-export default Product;
+export default Books;
