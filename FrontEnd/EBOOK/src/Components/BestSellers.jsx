@@ -10,7 +10,7 @@ function BestSellers() {
   const [bestSellersBook, setBestSellersBook] = useState([]);
   useEffect(() => {
     const bestSellers = books.filter((book) => book.BestSellers === true);
-    setBestSellersBook(bestSellers.slice(4, 10));
+    setBestSellersBook(bestSellers.slice(6, 12));
     console.log(bestSellers);
   }, [books]);
   return (

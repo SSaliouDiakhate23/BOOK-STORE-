@@ -21,7 +21,7 @@ function LatestBook() {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
           eaque, autem vero animi, ipsam placeat optio aliquid aperiam.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 gap-y-6 lg:gap-y-8 mt-6 md:mt-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 gap-y-6 lg:gap-y-8 mt-6 md:mt-20">
           {latestBook.map((book) => (
             <BookItem
               key={book.id}

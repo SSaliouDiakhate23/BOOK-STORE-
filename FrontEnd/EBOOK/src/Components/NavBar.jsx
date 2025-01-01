@@ -2,8 +2,11 @@ import { Link, NavLink } from "react-router";
 import { FaBookOpen } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { FaShoppingCart } from "react-icons/fa";
+import { useContext } from "react";
+import { bookContext } from "../Context/ProductContext";
 
 function NavBar() {
+  const { setShowSearch, showSearch } = useContext(bookContext);
   return (
     <div>
       <div className=" flex justify-between items-center">
@@ -35,13 +38,20 @@ function NavBar() {
         <div className="flex items-center justify-center gap-5 md:gap-6 min-w-[80px]">
           <div className="flex gap-2 items-center justify-center">
             <div className="flex items-center gap-1 border-b-2 py-2 text-sm text-left border-black">
-              <CiSearch className="w-5 h-5" />
-
-              <input
-                type="text"
-                placeholder="Recherche livre"
-                className="outline-none hidden lg:block placeholder:text-gray-600 placeholder:text-sm bg-transparent"
+              <CiSearch
+                className="w-5 h-5 cursor-pointer"
+                onClick={() => {
+                  setShowSearch((prev) => !prev);
+                }}
               />
+
+              {showSearch && (
+                <input
+                  type="text"
+                  placeholder="Recherche livre"
+                  className="outline-none hidden  transition-all lg:block placeholder:text-gray-600 placeholder:text-sm bg-transparent"
+                />
+              )}
             </div>
             <div className="relative">
               <Link className="cursor-pointer" to={"/cart"}>
