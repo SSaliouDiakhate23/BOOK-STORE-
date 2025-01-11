@@ -18,7 +18,7 @@ const NewsLetters = () => {
         <input
           type="email"
           placeholder="your email"
-          className="w-full outline-none sm:flex-1  placeholder:text-black pl-3 "
+          className="w-full outline-none sm:flex-1 text-black  placeholder:text-black pl-3 "
           required
         />
         <button

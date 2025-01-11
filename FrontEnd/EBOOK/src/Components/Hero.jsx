@@ -9,7 +9,7 @@ import Image3 from "./image6.jpg";
 function Hero() {
   return (
     <>
-      <div className="flex flex-col-reverse gap-10 md:gap-10 lg:gap-12  my-20 xl:flex-row">
+      <div className="flex flex-col-reverse gap-10 md:gap-10 lg:gap-12  my-10 xl:flex-row">
         <div className=" flex-col flex md:mt-10  justify-left items-center xl:items-start gap-3 md:gap-4 lg:gap-6">
           <p className="text-3xl md:text-4xl lg:text-6xl  prata-regular">
             Trouver Votre

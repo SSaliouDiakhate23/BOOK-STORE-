@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { books } from "../assets/assets";
+import { books, authors } from "../assets/assets";
 
 export const bookContext = createContext();
 
@@ -12,7 +12,7 @@ function ProductContextProvider(props) {
 
   return (
     <bookContext.Provider
-      value={{ books, currency, frais, setShowSearch, showSearch }}
+      value={{ books, currency, frais, setShowSearch, showSearch, authors }}
     >
       {props.children}
     </bookContext.Provider>

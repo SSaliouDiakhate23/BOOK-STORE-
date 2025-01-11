@@ -34,6 +34,105 @@ import image33 from './image33.jpg';
 import image34 from './image34.jpg';
 import image35 from './image35.jpg';
 import image36 from './image36.jpg';
+import image37 from './image37.jpg';
+import image38 from './image38.jpg';
+import image39 from './image39.jpg';
+import image40 from './image40.jpg';
+import image41 from './image41.jpg';
+import image42 from './image42.jpg';
+import Gazhali from './Ghazali.png';
+import Ahamdou from './Ahmadou.png';
+import Senghor from './Seghor.jpg';
+import souleymane from "./Souleymane.png";
+
+
+// ------------------------------------------
+
+export const authors = [
+  {
+      id: 1,
+      name: "Cheikh Ahmadou Bamba",
+      description: "🕌 Fondateur du mouridisme, un mouvement spirituel et religieux basé au Sénégal. ✍️ Auteur de nombreux poèmes et écrits spirituels qui encouragent la dévotion, le travail et la paix.",
+      dateOfBirth: "1853 📅",
+      image: Ahamdou,
+      dateOfDeath: "1927 🕊️",
+      nationality: "🇸🇳 Sénégalaise",
+      notableWorks: [
+          "📖 Massalik al-Jinan",
+          "📖 Mawaahibu Nafih",
+          "📖 Matlabul Fawzayni"
+      ]
+  },
+  {
+      id: 2,
+      name: "Imam Gazhali",
+      description: "📚 Philosophe, théologien et soufi persan du XIe siècle. 💡 Connu pour ses travaux influents en théologie islamique, philosophie, et mysticisme.",
+      dateOfBirth: "1058 📅",
+      image: Gazhali,
+      dateOfDeath: "1111 🕊️",
+      nationality: "🇮🇷 Persane",
+      notableWorks: [
+          "📖 Revival of the Religious Sciences (Ihya' Ulum al-Din)",
+          "📖 The Incoherence of the Philosophers",
+          "📖 The Alchemy of Happiness"
+      ]
+  },
+  {
+      id: 3,
+      name: "Léopold Sédar Senghor",
+      description: "🖋️ Poète, écrivain et premier président du Sénégal. 🌍 Connu comme l'un des fondateurs de la Négritude, un mouvement littéraire célébrant les cultures africaines.",
+      dateOfBirth: "9 octobre 1906 📅",
+      image: Senghor,
+      dateOfDeath: "20 décembre 2001 🕊️",
+      nationality: "🇸🇳 Sénégalaise",
+      notableWorks: [
+          "📖 Chants d'ombre",
+          "📖 Éthiopiques",
+          "📖 Hosties noires"
+      ]
+  },
+  {
+      id: 4,
+      name: "Souleymane Bachir Diagne",
+      description: "🤔 Philosophe sénégalais contemporain, spécialisé en philosophie islamique, en mathématiques et en épistémologie.",
+      dateOfBirth: "8 novembre 1955 📅",
+      image: souleymane,
+      dateOfDeath: "En vie 🌟",
+      nationality: "🇸🇳 Sénégalaise",
+      notableWorks: [
+          "📖 Comment philosopher en islam",
+          "📖 Bergson postcolonial",
+          "📖 L'encre des savants"
+      ]
+  }
+  // {
+  //     id: 5,
+  //     name: "Robert T. Kiyosaki",
+  //     description: "💼 Entrepreneur, investisseur et auteur américain. 🏦 Connu pour ses ouvrages sur l'éducation financière et le développement personnel.",
+  //     dateOfBirth: "8 avril 1947 📅",
+  //     image: image7,
+  //     nationality: "🇺🇸 Américaine",
+  //     notableWorks: [
+  //         "📖 Rich Dad Poor Dad",
+  //         "📖 The Cashflow Quadrant",
+  //         "📖 Retire Young Retire Rich"
+  //     ]
+  // },
+  // {
+  //     id: 6,
+  //     name: "Mariama Bâ",
+  //     description: "✊ Écrivaine sénégalaise connue pour ses œuvres qui abordent les défis des femmes dans les sociétés africaines patriarcales.",
+  //     dateOfBirth: "17 avril 1929 📅",
+  //     image: image7,
+  //     dateOfDeath: "17 août 1981 🕊️",
+  //     nationality: "🇸🇳 Sénégalaise",
+  //     notableWorks: [
+  //         "📖 Une si longue lettre",
+  //         "📖 Le Chant écarlate"
+  //     ]
+  // }
+];
+
 
 
 
@@ -46,7 +145,7 @@ export const books = [
             author: "Robert T. Kiyosaki",
             description: "Un ouvrage culte qui compare deux visions de l'argent et de l'éducation financière à travers l'expérience personnelle de l'auteur.",
             price: 7.0,
-            category: "Finance",
+            category: "Affaires",
             coverImage: image1,
             BestSellers:false,
             rating: 4.5,
@@ -549,7 +648,83 @@ export const books = [
                                 "Un livre très intéressant et bien écrit.",
                                 ]
 
-        }
+        },
+        {
+    id: 46,
+    title: "Le livre de L'amour",
+    author: "Gazhali",
+    description: "Un ouvrage profond et poétique explorant l'amour sous toutes ses formes : spirituel, humain et divin. Gazhali invite à une réflexion sur les liens universels qui unissent les cœurs.",
+    price: 10,
+    category: "islam",
+    coverImage: image42,
+    BestSellers: true,
+    rating: 4.5,
+    reviews: [
+        "Une lecture captivante qui inspire à mieux comprendre l'amour dans toutes ses dimensions.",
+        "Un mélange parfait de spiritualité et de philosophie, magnifiquement écrit.",
+    ]
+},
+{
+    id: 47,
+    title: "Les secrets de la purification",
+    author: "Gazhali",
+    description: "Ce livre dévoile les étapes de purification spirituelle selon une perspective islamique, avec des conseils pratiques pour atteindre une vie équilibrée et harmonieuse.",
+    price: 11,
+    category: "islam",
+    coverImage: image38,
+    BestSellers: false,
+    rating: 4.2,
+    reviews: [
+        "Un guide essentiel pour quiconque cherche à améliorer sa relation avec soi-même et avec Dieu.",
+        "Inspirant et accessible, ce livre change la manière de voir la spiritualité.",
+    ]
+},
+{
+    id: 48,
+    title: "Le livre des vices de la langue",
+    author: "Gazhali",
+    description: "Une analyse fascinante des mots et de leur impact sur les autres et sur soi-même. Gazhali met en garde contre les dangers des paroles irréfléchies et propose des solutions pour une communication bienveillante.",
+    price: 12,
+    category: "islam",
+    coverImage: image39,
+    BestSellers: false,
+    rating: 4.3,
+    reviews: [
+        "Un livre qui pousse à la réflexion sur l'usage quotidien de la parole.",
+        "Très pertinent dans notre époque où les mots sont parfois utilisés à mauvais escient.",
+    ]
+},
+{
+    id: 49,
+    title: "Le livre de la méditation",
+    author: "Gazhali",
+    description: "Un guide intemporel sur la méditation et la contemplation, aidant à se recentrer et à atteindre un état de paix intérieure.",
+    price: 13,
+    category: "islam",
+    coverImage: image40,
+    BestSellers: false,
+    rating: 4.4,
+    reviews: [
+        "Un chef-d'œuvre pour les amateurs de spiritualité et de réflexion.",
+        "Un livre qui enseigne l'art de ralentir et d'observer le monde avec un regard neuf.",
+    ]
+},
+{
+    id: 50,
+    title: "Le livre du voyage",
+    author: "Gazhali",
+    description: "Une exploration spirituelle et physique du voyage, vu comme un moyen de croissance personnelle et de connexion à l'univers.",
+    price: 14,
+    category: "islam",
+    coverImage: image41,
+    BestSellers: false,
+    rating: 4.6,
+    reviews: [
+        "Une invitation au voyage intérieur comme extérieur, riche en enseignements.",
+        "Inspirant, ce livre change notre manière de voir le monde et nous-mêmes.",
+    ]
+},
+
 ];      
         
           

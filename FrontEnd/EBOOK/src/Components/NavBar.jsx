@@ -12,26 +12,26 @@ function NavBar() {
       <div className=" flex justify-between items-center">
         <div className="flex gap-5 items-center">
           <FaBookOpen className="w-12 h-12" />
-          <p className="text-3xl prata-regular">MAGIC BOOKS</p>
+          <p className=" text-lg lg:text-3xl  prata-regular">MAGIC BOOKS</p>
         </div>
         <div className="hidden md:flex items-center justify-center  gap-4 sm:gap-6 md:gap-8 text-black text-md leading-3">
           <NavLink className="flex flex-col gap-2 h-3 " to={"/"}>
-            <p>ACCUEIL</p>
+            <p className="text-sm lg:text-[15px]">ACCUEIL</p>
             <div className="w-full  border-b-2 border-black "></div>
           </NavLink>
 
           <NavLink className="flex flex-col gap-2 h-3" to={"/collection"}>
-            <p>LIVRES</p>
+            <p className="text-sm lg:text-[15px]">LIVRES</p>
             {/* <div className="w-full border-b-2 border-black "></div> */}
           </NavLink>
 
           <NavLink className="flex flex-col gap-2 h-3" to={"/About"}>
-            <p>ACTEURS</p>
+            <p className="text-sm lg:text-[15px]">AUTEURS</p>
             {/* <div className="w-full  border-b-2 border-black "></div> */}
           </NavLink>
 
           <NavLink className="flex flex-col gap-2 h-3" to={"/contact"}>
-            <p>CONTACT</p>
+            <p className="text-sm lg:text-[15px]">CONTACT</p>
             {/* <div className="w-full border-b-2 border-black "></div> */}
           </NavLink>
         </div>

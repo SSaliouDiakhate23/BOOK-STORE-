@@ -1,4 +1,5 @@
 import { FaBookOpen } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="">
-          <p className="text-xl font-medium mb-5">COMPAGNY</p>
+          <p className="text-xl font-medium mb-5">SOCIÉTÉ</p>
           <ul className="flex flex-col gap-1 text-gray-300">
             <li>Accueil</li>
             <li>À propos de nous</li>
@@ -25,7 +26,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="">
-          <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
+          <p className="text-xl font-medium mb-5">CONTACTEZ-NOUS</p>
           <ul className="flex flex-col gap-1 text-gray-300">
             <li>+1-212-456-987</li>
             <li>Contact@magicbooks.com</li>
@@ -35,7 +36,7 @@ const Footer = () => {
       <div>
         <hr />
         <p className="py-5 text-sm lg:text-base text-center">
-          Copyright 2024@ magicbooks.com -All Right Reserved
+          Copyright 2024@ magicbooks.com - Tous droits réservés
         </p>
       </div>
     </div>

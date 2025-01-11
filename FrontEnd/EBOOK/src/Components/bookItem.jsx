@@ -10,7 +10,7 @@ function bookItem({ id, titre, prix, image, auteur }) {
         className="flex flex-col gap-3 hover:scale-105 duration-200"
         to={`/books/${id}`}
       >
-        <div className="xl:h-72 md:h-64 h-64 flex-shrink-0  text-xs md:text-base  ">
+        <div className="xl:h-72  sm:h-64 h-64 flex-shrink-0  text-xs md:text-base  ">
           <img src={image} alt={titre} className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col gap-2 text-xs md:text-base">
