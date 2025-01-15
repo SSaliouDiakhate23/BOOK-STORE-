@@ -27,7 +27,7 @@ function Collection() {
     );
     console.log(cpBooks);
     setfilterBook(cpBooks);
-  }
+}
   useEffect(() => {
     filterBooks();
   }, [selectCategorie]);

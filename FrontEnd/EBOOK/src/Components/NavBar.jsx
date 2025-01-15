@@ -16,22 +16,22 @@ function NavBar() {
         </div>
         <div className="hidden md:flex items-center justify-center  gap-4 sm:gap-6 md:gap-8 text-black text-md leading-3">
           <NavLink className="flex flex-col gap-2 h-3 " to={"/"}>
-            <p className="text-sm lg:text-[15px]">ACCUEIL</p>
+            <p className="text-sm lg:text-[15px]">Acceuil</p>
             <div className="w-full  border-b-2 border-black "></div>
           </NavLink>
 
           <NavLink className="flex flex-col gap-2 h-3" to={"/collection"}>
-            <p className="text-sm lg:text-[15px]">LIVRES</p>
+            <p className="text-sm lg:text-[15px]">Livres</p>
             {/* <div className="w-full border-b-2 border-black "></div> */}
           </NavLink>
 
           <NavLink className="flex flex-col gap-2 h-3" to={"/About"}>
-            <p className="text-sm lg:text-[15px]">AUTEURS</p>
+            <p className="text-sm lg:text-[15px]">Auteurs</p>
             {/* <div className="w-full  border-b-2 border-black "></div> */}
           </NavLink>
 
           <NavLink className="flex flex-col gap-2 h-3" to={"/contact"}>
-            <p className="text-sm lg:text-[15px]">CONTACT</p>
+            <p className="text-sm lg:text-[15px]">Contact</p>
             {/* <div className="w-full border-b-2 border-black "></div> */}
           </NavLink>
         </div>
@@ -62,7 +62,10 @@ function NavBar() {
               </p>
             </div>
           </div>
-          <p className="border-black border-l-2 px-2 cursor-pointer ">LOGIN</p>
+          <button className="px-5 lg:px-8 bg-black py-2 text-white hover:bg-white duration-200 border hover:border-black hover:text-black cursor-pointer">
+            {" "}
+            Login
+          </button>
         </div>
       </div>
     </div>
